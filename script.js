@@ -242,3 +242,4 @@ teluguBtn.addEventListener('click', () => {
 
 // Initialize page in English
 translatePage('en');
+
