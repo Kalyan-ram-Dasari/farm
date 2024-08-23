@@ -482,4 +482,8 @@ footer {
     #home {
         height: 400px;
     }
+    nav ul li a {
+    padding: 6px 12px;
+    font-size: 16px;
+}
 }
