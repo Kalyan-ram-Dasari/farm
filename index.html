@@ -8,96 +8,67 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+    <div class="language-toggle">
+        <button id="englishBtn" class="active">English</button>
+        <button id="teluguBtn">తెలుగు</button>
+    </div>
+
     <header>
         <div class="title-background">
-            <h1>Sri Krishna Sheep and Goat Farm</h1>
+            <h1 data-translate="farm-title">Sri Krishna Sheep and Goat Farm</h1>
         </div>
     </header>
     <nav id="sticky-nav">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#enquiry">Live Sale</a></li>
+            <li><a href="#home" data-translate="home">Home</a></li>
+            <li><a href="#about" data-translate="about">About</a></li>
+            <li><a href="#gallery" data-translate="gallery">Gallery</a></li>
+            <li><a href="#contact" data-translate="contact">Contact</a></li>
+            <li><a href="#enquiry" data-translate="enquiry">Live Sale</a></li>
         </ul>
     </nav>
+    
 
     <main>
         <section id="home">
             <div class="slider">
-                <!-- <video autoplay>
-                    <source src="images/WhatsApp Video 2024-08-14 at 13.10.38_c976d9be.mp4" type="video/mp4" />
-                  </video> -->
                 <video src="videos/farm_video.mp4" controls autoplay muted></video>
-                <!-- <img src="https://img.freepik.com/premium-photo/group-indian-goat-sheep-village_55610-2142.jpg" alt="Farm 1" class="active">
-                <img src="https://images.picxy.com/cache/2020/10/14/366bb860d83a16b886dc7f721ea3441f.jpg" alt="Farm 2">
-                <img src="https://c8.alamy.com/comp/E1RN72/india-rajasthan-meda-village-around-jodhpur-rabari-ethnic-group-sheep-E1RN72.jpg" alt="Farm 3"> -->
             </div>
-          
         </section>
-
-        <!-- <section id="about">
-            <h2>About Us</h2>
-            <div class="about-content">
-                <p>Sri Krishna Sheep and Goat Farm is a family-owned business dedicated to raising healthy and happy animals. With over two decades of experience, we've established ourselves as a leading provider of high-quality sheep and goats in the region.</p>
-                
-                <h3>Our Quality Commitment</h3>
-                <p>At Sri Krishna Farm, we pride ourselves on the exceptional quality of our livestock:</p>
-                <ul>
-                    <li>Premium Breeds: We raise superior breeds known for their meat quality and wool production.</li>
-                    <li>Health-First Approach: Regular veterinary check-ups and vaccinations ensure our animals are in top health.</li>
-                    <li>Ethical Raising Practices: Our animals are raised in spacious, clean environments, prioritizing their well-being.</li>
-                </ul>
         
-                <h3>Nutrition Excellence</h3>
-                <p>The secret to our animals' quality lies in their nutrition:</p>
-                <ul>
-                    <li>Organic Feed: We use locally sourced, organic feed to ensure the best nutrition.</li>
-                    <li>Balanced Diet: Our animals enjoy a scientifically formulated diet for optimal growth and health.</li>
-                    <li>Fresh Grazing: Access to lush, natural pastures supplements their diet with essential nutrients.</li>
-                </ul>
-        
-                <div class="live-sale-highlight">
-                    <h3>Live Sale Available!</h3>
-                    <p>Experience the convenience of selecting your animals in person. Our live sale feature allows you to visit the farm, choose your preferred sheep or goats, and take them home the same day!</p>
-                    <a href="#contact" class="cta-button">Enquire About Live Sales</a>
-                </div>
-            </div>
-        </section> -->
         <section id="about">
            
-            <h2>About Us</h2>
+            <h2 data-translate="about-us">About Us</h2>
     <div class="about-content">
-        <p>Sri Krishna Sheep and Goat Farm is a family-owned business dedicated to raising healthy and happy animals. With over two decades of experience, we've established ourselves as a leading provider of high-quality sheep and goats in the region.</p>
+        <p data-translate="about-description">Sri Krishna Sheep and Goat Farm is a family-owned business dedicated to raising healthy and happy animals. With over two decades of experience, we've established ourselves as a leading provider of high-quality sheep and goats in the region.</p>
         
         <div class="read-more-content" id="moreContent">
-            <h3>Our Quality Commitment</h3>
-            <p>At Sri Krishna Farm, we pride ourselves on the exceptional quality of our livestock:</p>
+            <h3 data-translate="quality-commitment">Our Quality Commitment</h3>
+            <p data-translate="quality-description">At Sri Krishna Farm, we pride ourselves on the exceptional quality of our livestock:</p>
             <ul>
-                <li>Premium Breeds: We raise superior breeds known for their meat quality and wool production.</li>
-                <li>Health-First Approach: Regular veterinary check-ups and vaccinations ensure our animals are in top health.</li>
-                <li>Ethical Raising Practices: Our animals are raised in spacious, clean environments, prioritizing their well-being.</li>
+                <li data-translate="premium-breeds">Premium Breeds: We raise superior breeds known for their meat quality and wool production.</li>
+                <li data-translate="health-approach">Health-First Approach: Regular veterinary check-ups and vaccinations ensure our animals are in top health.</li>
+                <li data-translate="ethical-practices">Ethical Raising Practices: Our animals are raised in spacious, clean environments, prioritizing their well-being.</li>
             </ul>
 
-            <h3>Nutrition Excellence</h3>
-            <p>The secret to our animals' quality lies in their nutrition:</p>
+            <h3 data-translate="nutrition-excellence">Nutrition Excellence</h3>
+            <p data-translate="nutrition-description">The secret to our animals' quality lies in their nutrition:</p>
             <ul>
-                <li>Organic Feed: We use locally sourced, organic feed to ensure the best nutrition.</li>
-                <li>Balanced Diet: Our animals enjoy a scientifically formulated diet for optimal growth and health.</li>
-                <li>Fresh Grazing: Access to lush, natural pastures supplements their diet with essential nutrients.</li>
+                <li data-translate="organic-feed">Organic Feed: We use locally sourced, organic feed to ensure the best nutrition.</li>
+                <li data-translate="balanced-diet">Balanced Diet: Our animals enjoy a scientifically formulated diet for optimal growth and health.</li>
+                <li data-translate="fresh-grazing">Fresh Grazing: Access to lush, natural pastures supplements their diet with essential nutrients.</li>
             </ul>
         </div>
         
-        <button id="readMoreBtn" class="read-more-btn" onclick="toggleReadMore()">Read More</button>
+        <button id="readMoreBtn" class="read-more-btn" onclick="toggleReadMore()" data-translate="read-more">Read More</button>
     </section>
     <section id="enquiry">
         <div class="live-sale-highlight">
             <div class="grid-container">
                 <div class="left-column">
-                    <h3>Live Sale Available!</h3>
-                    <p>Experience the convenience of selecting your animals in person. Our live sale feature allows you to visit the farm, choose your preferred sheep or goats, and take them home the same day!</p>
-                    <a href="#contact" class="cta-button">Enquire About Live Sales</a>
+                    <h3 data-translate="live-sale">Live Sale Available!</h3>
+                    <p data-translate="live-sale-description">Experience the convenience of selecting your animals in person. Our live sale feature allows you to visit the farm, choose your preferred sheep or goats, and take them home the same day!</p>
+                    <a href="#contact" class="cta-button" data-translate="enquire-button">Enquire About Live Sales</a>
                 </div>
                 <div class="right-column">
                     <div class="live-sale-carousel">
@@ -125,7 +96,7 @@
     
 
         <section id="gallery">
-            <h2>Gallery</h2>
+            <h2 data-translate="gallery-title">Gallery</h2>
             <div class="gallery-container">
                 <img src="https://t3.ftcdn.net/jpg/05/49/71/64/360_F_549716403_Y4uExmXo4rB2LVcwwC0qAGgq6LHYuGE4.jpg" alt="Sheep 1"   onclick="openLightbox(this)">
                 <img src="https://t3.ftcdn.net/jpg/05/49/71/64/360_F_549716403_Y4uExmXo4rB2LVcwwC0qAGgq6LHYuGE4.jpg" alt="Sheep 2"  onclick="openLightbox(this)">
@@ -140,36 +111,36 @@
         </section>
 
         <section id="contact">
-            <h2>Contact Us</h2>
+            <h2 data-translate="contact-us">Contact Us</h2>
             <div id="contact-info">
-                <p>Name : <b> Govind Rao Dasari</b> <sup>proprietor</sup></p>
-                <p>Phone: +91 9398441126</p>
-                <p>Email: info@srikrishnafarm.com</p>
-                <p>Address: Parimpudi Village, Koyyalagudem Mandal ,West Godavari District Andhra Pradesh - 588156</p>
+                <p><span data-translate="name">Name</span>: <b> Govind Rao Dasari</b> <sup>proprietor</sup></p>
+                <p><span data-translate="phone">Phone</span>: +91 9398441126</p>
+                <p><span data-translate="email">Email</span>: info@srikrishnafarm.com</p>
+                <p><span data-translate="address">Address</span>: Parimpudi Village, Koyyalagudem Mandal ,West Godavari District Andhra Pradesh - 588156</p>
             </div>
             <form id="contact-form" action="https://formsubmit.co/kalyannani049@gmail.com" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="number" name="number" placeholder="Enter your number" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="text" name="name" data-translate="your-name" placeholder="Your Name" required>
+                <input type="email" name="email" data-translate="your-email" placeholder="Your Email" required>
+                <input type="number" name="number" data-translate="your-number" placeholder="Enter your number" required>
+                <textarea name="message" data-translate="your-message" placeholder="Your Message" required></textarea>
                 
                 <input type="text" name="_honey" style="display:none">
                
                 <input type="hidden" name="_captcha" value="false">
                
                 <input type="hidden" name="_next" value="https://kalyan-ram-dasari.github.io/farm/thanks.html">
-                <button type="submit">Send Message</button>
+                <button type="submit" data-translate="send-message">Send Message</button>
             </form>
         </section>
     </main>
 
     <footer>
         <div class="footer-content">
-            <p>&copy;  Sri Krishna Sheep and Goat Farm. All rights reserved.</p>
+            <p>&copy; <span data-translate="farm-title">Sri Krishna Sheep and Goat Farm</span>. <span data-translate="rights-reserved">All rights reserved.</span></p>
             
             <div class="contact-details">
-                <p>Phone: <a href="tel:+91 9398441126">9398441126</a></p>
-                <p>Email: <a href="mailto:contact@skfarm.com">info@srikrishnafarm.com</a></p>
+                <p><span data-translate="phone">Phone</span>: <a href="tel:+91 9398441126">9398441126</a></p>
+                <p><span data-translate="email">Email</span>: <a href="mailto:contact@skfarm.com">info@srikrishnafarm.com</a></p>
             </div>
     
             <div class="social-icons">
@@ -186,8 +157,8 @@
         </div>
         
         <div class="footer-bottom">
-            <p>Our mission is to provide high-quality livestock and promote sustainable farming practices. Learn more about our journey <a href="#about">here</a>.</p>
-            <p>Follow us on social media for the latest updates and news.</p>
+            <p><span data-translate="mission">Our mission is to provide high-quality livestock and promote sustainable farming practices. Learn more about our journey</span> <a href="#about" data-translate="here">here</a>.</p>
+            <p data-translate="follow-us">Follow us on social media for the latest updates and news.</p>
         </div>
     </footer>
     
